@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffe4f0;
+  margin: 0;
+  padding: 1rem;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 1rem;
+}
+
+#malla-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.año-columna {
+  background-color: #fce4ec;
+  border: 2px solid #f8bbd0;
+  padding: 1rem;
+  border-radius: 12px;
+  min-width: 250px;
+}
+
+.semestre {
+  margin-bottom: 1.5rem;
+}
+
+.semestre h3 {
+  color: #d81b60;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.ramo {
+  background-color: #f8bbd0;
+  border: 1px solid #ec407a;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.4;
+  pointer-events: none;
+  font-size: 0.95rem;
+}
+
+.ramo.aprobado {
+  background-color: #f06292;
+  color: white;
+  opacity: 1;
+}
+
+.ramo.habilitado {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ramo:hover {
+  background-color: #f48fb1;
+}
